@@ -1,0 +1,236 @@
+atom-text-editor {
+    &.is-focused::shadow {
+        .line {
+            transition: background-color 200ms linear;
+
+            &.cursor-line {
+                background-color: @dark-gray;
+            }
+        }
+    }
+
+    &::shadow {
+      .string {
+          color: @yellow;
+      }
+    }
+
+}
+
+.comment {
+    color: @light-gray;
+
+    &.block {
+        color: @dark-green;
+
+        .comment {
+            &.begin, &.end {
+                color: @dark-green;
+            }
+        }
+
+        .definition {
+            color: @dark-green;
+        }
+    }
+}
+
+.keyword {
+    color: @white;
+}
+
+.punctuation {
+    .string {
+        &.begin, &.end {
+            color: @yellow;
+        }
+    }
+
+    &.terminator {
+        color: @orange;
+        font-weight: bold;
+    }
+}
+
+.constant {
+    &.numeric {
+        color: @red;
+    }
+}
+
+
+/**********************
+ * CSS
+ *********************/
+.css {
+    .constant {
+        color: @purple;
+    }
+
+    .unit, .rgb-value {
+        color: @purple;
+    }
+
+    .attribute-name {
+        color: @green;
+    }
+
+    .property-name {
+        color: @white;
+        font-weight: bold;
+    }
+
+    .property-value {
+        color: @very-light-gray;
+
+        .function {
+            color: @blue;
+        }
+
+        &.constant {
+            color: @yellow;
+        }
+    }
+
+    .at-rule .keyword {
+        color: @purple;
+    }
+
+    .tag {
+        color: @green;
+        font-weight: bold;
+    }
+}
+
+
+/**********************
+ * LESS
+ *********************/
+.less {
+    .variable {
+        color: @blue;
+    }
+
+    .html {
+        &.elements {
+            color: @green;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/**********************
+ * HTML
+ *********************/
+.html {
+    .tag {
+        color: @blue;
+    }
+
+    .attribute-name {
+        color: @green;
+    }
+
+    .character {
+        color: @blue;
+    }
+}
+
+
+/**********************
+ * PHP
+ *********************/
+.php {
+    .embedded {
+        &.begin, &.end {
+            color: @red;
+            font-weight: bold;
+        }
+    }
+
+    .variable {
+        color: @blue;
+
+        &.class {
+            color: @purple;
+
+            .punctuation {
+                color: @purple;
+            }
+        }
+    }
+
+    .entity {
+        &.function {
+            color: @white;
+        }
+    }
+
+    .storage {
+        color: @white;
+        font-weight: bold;
+    }
+
+    .keyword {
+        color: @white;
+        font-weight: bold;
+    }
+
+    .phpdoc {
+        color: @dark-green;
+    }
+
+    .support.function {
+        color: @gray-blue;
+    }
+
+    .constant {
+        &.other {
+            color: @blue;
+        }
+    }
+}
+
+
+/**********************
+ * JS
+ *********************/
+.js {
+
+    .constant {
+        color: @purple;
+        font-weight: bold;
+    }
+    .meta {
+        color: @syntax-text-color;
+    }
+
+    .storage {
+        color: @white;
+        font-weight: bold;
+    }
+
+    .entity {
+        &.function, &.instance {
+            color: @blue;
+        }
+    }
+
+    .variable {
+        color: @green;
+
+        &.language {
+            color: @white;
+            font-weight: bold;
+        }
+    }
+
+    .regexp {
+        color: @yellow;
+    }
+
+    .character.escape {
+        color: @red;
+    }
+}

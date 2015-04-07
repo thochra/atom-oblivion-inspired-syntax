@@ -1,0 +1,11 @@
+{
+  "name": "Oblivion Inspired Syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A Gedit Oblivion inspired theme",
+  "repository": "https://github.com/thochra/atom-oblivion-inspired-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.175.0"
+  }
+}
